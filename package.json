@@ -1,0 +1,28 @@
+{
+  "name": "vau-project-creator-fe",
+  "version": "1.0.0",
+  "description": "front end app for valtech au creator app",
+  "main": "app.js",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --config ./config/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://review.neonstingray.com/vau-project-creator"
+  },
+  "author": "Phillip Darley",
+  "private": true,
+  "dependencies": {
+    "jquery": "3.0.0",
+    "moment": "2.13.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.21.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.2",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "1.14.1"
+  }
+}
