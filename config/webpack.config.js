@@ -11,9 +11,16 @@ module.exports = {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
     },
     module: {
-        loaders: [{
+        loaders: [
+            //css
+            {
                 test: /\.css$/,
                 loader: 'style!css!'
+            },
+            //less
+            {
+                test: /\.less$/,
+                loader: 'style!css!less'
             },
             // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
             {
