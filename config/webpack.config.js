@@ -1,8 +1,8 @@
 module.exports = {
-
+    context: __dirname + '/..', //step out of the config for rel paths
     entry: './app/app.ts',
     output: {
-        filename: './app/bundle.js',
+        filename: './bundle.js',
         path: './dist'
     },
     devtool: 'source-map',
@@ -34,7 +34,5 @@ module.exports = {
             }
         ]
     }
-
-
 
 };

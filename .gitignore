@@ -1,4 +1,4 @@
 dist
 node_modules
 typings
-bundle.js*
+.vscode

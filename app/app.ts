@@ -15,7 +15,7 @@ let actionItem2 = new ActionItemImpl('rule the world', false, getFutureDay(1));
 
 let items = [actionItem1,actionItem2];
 
-console.log(actionItem1.getDisplayDueDate());
+console.log(actionItem1.getDisplayDueDate();
 
 
 $(document).ready(function(){

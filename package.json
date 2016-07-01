@@ -1,32 +1,36 @@
 {
-  "name": "vau-project-creator-fe",
-  "version": "1.0.0",
-  "description": "front end app for valtech au creator app",
-  "main": "app.js",
-  "scripts": {
-    "dev": "webpack-dev-server --inline --hot --config ./config/webpack.config.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://review.neonstingray.com/vau-project-creator"
-  },
-  "author": "Phillip Darley",
-  "private": true,
-  "dependencies": {
-    "jquery": "2.2.2",
-    "moment": "2.13.0",
-    "underscore": "1.8.3"
-  },
-  "devDependencies": {
-    "css-loader": "^0.23.1",
-    "html-webpack-plugin": "^2.21.0",
-    "less": "^2.7.1",
-    "less-loader": "^2.2.3",
-    "raw-loader": "^0.5.1",
-    "style-loader": "^0.13.1",
-    "ts-loader": "^0.8.2",
-    "typescript": "^1.8.10",
-    "webpack": "^1.12.13",
-    "webpack-dev-server": "1.14.1"
-  }
+    "name": "webpack-typescript",
+    "version": "1.0.0",
+    "description": "typescript and webpack example",
+    "main": "app.js",
+    "scripts": {
+        "dev": "webpack-dev-server --inline --hot --config ./config/webpack.config.js",
+        "build": "rimraf dist && webpack --bail --progress --profile --config ./config/webpack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://review.neonstingray.com/vau-project-creator"
+    },
+    "author": "Phillip Darley",
+    "private": false,
+    "dependencies": {
+        "jquery": "2.2.2",
+        "moment": "2.13.0",
+        "underscore": "1.8.3"
+    },
+    "devDependencies": {
+        "awesome-typescript-loader": "^1.1.1",
+        "css-loader": "^0.23.1",
+        "html-webpack-plugin": "^2.21.0",
+        "http-server": "^0.9.0",
+        "less": "^2.7.1",
+        "less-loader": "^2.2.3",
+        "raw-loader": "^0.5.1",
+        "rimraf": "^2.5.2",
+        "style-loader": "^0.13.1",
+        "ts-loader": "^0.8.2",
+        "typescript": "^1.8.10",
+        "webpack": "^1.12.13",
+        "webpack-dev-server": "1.14.1"
+    }
 }
