@@ -1,6 +1,6 @@
 module.exports = {
     context: __dirname + '/..', //step out of the config for rel paths
-    entry: './app/app.ts',
+    entry: ['webpack/hot/dev-server', './app/app.ts'],
     output: {
         filename: './bundle.js',
         path: './dist'
@@ -33,6 +33,12 @@ module.exports = {
                 loader: 'raw'
             }
         ]
+    },
+    //TODO: get dev server serving index html with the [hash[]bundle] file name, currently this only works with npm build
+    devServer: {
+
+        stats: 'minimal',
+        port: '8080'
     }
 
 };

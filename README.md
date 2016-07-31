@@ -6,6 +6,11 @@ Basic 'hello world' web app dev set up for prototyping with typescript using web
 
 ##Usage##
 
+- npm run build
+- ./node_modules/.bin/http-server
+
+- TODOD: fix dev server
+
 * run command 'npm run dev'
 
 
